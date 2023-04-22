@@ -4,7 +4,7 @@ import Intro from "./sections/Intro";
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col justify-between">
+    <div className="flex min-h-screen flex-col justify-between bg-zinc-900">
       <Header />
       <main className="container mx-auto">
         <Intro />

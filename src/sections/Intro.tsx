@@ -1,9 +1,16 @@
+import { TypeAnimation } from "react-type-animation";
+
 function Intro() {
   return (
-    <div className="relative mt-12 h-screen text-center text-white">
-      <h1>Hi</h1>
-      <h2>I'm Nathanael Gaulke</h2>
-      <h3>But I often go by Nate :)</h3>
+    <div className="relative h-screen bg-[url('/bg.jpg')] bg-cover">
+      <div className="text-white w-full items-center text-center text-xl">
+        <span>Hi</span>
+        {/* <br />
+        <TypeAnimation
+          sequence={[1000, "I'm Nathanael Gaulke\nBut I often go by Nate :)"]}
+          style={{ whiteSpace: "pre-line", display: "block" }}
+        /> */}
+      </div>
     </div>
   );
 }

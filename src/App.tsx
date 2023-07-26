@@ -2,6 +2,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
+import Experience from "./sections/Experience";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Intro />
       <About />
+      <Experience />
       <Footer />
     </div>
   );

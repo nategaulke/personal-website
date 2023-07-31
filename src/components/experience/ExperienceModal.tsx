@@ -15,18 +15,13 @@ function ExperienceModal() {
   return (
     <>
       <div className="flex">
-        <button
-          type="button"
-          onClick={openModal}
-          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-        >
+        <button type="button" onClick={openModal}>
           <img
-            className="h-60 w-60 rounded-lg"
-            src="/profile.png"
+            className="w-60 rounded-lg opacity-50"
+            src="/schwab_logo.svg"
             alt="BigCo Inc. logo"
           />
-          <br />
-          <h3 className="text-xl font-bold">Charles Schwab</h3>
+          <h3 className="mt-2 text-xl font-bold">Schwab</h3>
         </button>
       </div>
 

@@ -10,7 +10,7 @@ function Intro() {
           src="/profile.png"
           alt="profile picture"
         />
-        <div className="ml-24 text-5xl text-white ">
+        <div className="ml-24 text-5xl leading-normal text-white">
           <h1>Hi!</h1>
           <h1>My name is Nathanael</h1>
           <h1>But you can call me Nate :)</h1>

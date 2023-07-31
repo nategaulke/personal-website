@@ -20,7 +20,11 @@ function ExperienceModal() {
           onClick={openModal}
           className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
         >
-          <div className="h-60 w-60 rounded-lg bg-[url('/profile.png')] bg-contain " />
+          <img
+            className="h-60 w-60 rounded-lg"
+            src="/profile.png"
+            alt="BigCo Inc. logo"
+          />
           <br />
           <h3 className="text-xl font-bold">Charles Schwab</h3>
         </button>

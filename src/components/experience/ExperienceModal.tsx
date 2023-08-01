@@ -74,10 +74,13 @@ function ExperienceModal() {
                     <div>
                       <Dialog.Title
                         as="h3"
-                        className="text-lg font-bold text-white"
+                        className="text-xl font-bold text-white"
                       >
                         Associate Software Engineer
                       </Dialog.Title>
+                      <h4 className="text-md font-bold text-white">
+                        Jun. 2023 - Present
+                      </h4>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
                           Your payment has been successfully submitted. We’ve
@@ -85,15 +88,13 @@ function ExperienceModal() {
                           order.
                         </p>
                       </div>
-                      <div className="mt-4">
-                        <button
-                          type="button"
-                          className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                          onClick={closeModal}
-                        >
-                          Got it, thanks!
-                        </button>
-                      </div>
+                      <button
+                        type="button"
+                        className="justify-center rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white"
+                        onClick={closeModal}
+                      >
+                        Back
+                      </button>
                     </div>
                   </div>
                 </Dialog.Panel>

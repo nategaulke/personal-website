@@ -52,12 +52,24 @@ function ExperienceModal() {
               >
                 <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight p-8 text-left align-middle shadow-xl transition-all">
                   <div className="flex">
-                    <div>
+                    <div className="mr-8">
                       <img
-                        className="mr-8 w-60 rounded-lg"
+                        className="w-60 rounded-lg"
                         src="/schwab_logo.svg"
                         alt="Schwab Logo"
                       />
+                      <div className="mt-2 flex justify-center">
+                        <img
+                          className="h-8 w-8 rounded-full"
+                          src="/dev-icons/java.jpg"
+                          alt="Java"
+                        />
+                        <img
+                          className="h-8 w-8 rounded-full"
+                          src="/dev-icons/spring.png"
+                          alt="Spring"
+                        />
+                      </div>
                     </div>
                     <div>
                       <Dialog.Title

@@ -15,9 +15,9 @@ function ExperienceModal() {
   return (
     <>
       <div className="flex">
-        <button type="button" onClick={openModal}>
+        <button type="button" className="rounded-lg" onClick={openModal}>
           <img
-            className="w-60 rounded-lg opacity-50"
+            className="aspect-square w-60 rounded-lg opacity-50"
             src="/schwab_logo.svg"
             alt="Schwab Logo"
           />
@@ -50,11 +50,11 @@ function ExperienceModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight p-8 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight p-8 text-left align-middle shadow-xl transition-all">
                   <div className="flex">
-                    <div className="mr-8">
+                    <div className="h-full w-1/3">
                       <img
-                        className="w-60 rounded-lg"
+                        className="h-60 rounded-lg"
                         src="/schwab_logo.svg"
                         alt="Schwab Logo"
                       />
@@ -71,10 +71,10 @@ function ExperienceModal() {
                         />
                       </div>
                     </div>
-                    <div>
+                    <div className="w-2/3">
                       <Dialog.Title
                         as="h3"
-                        className="text-xl font-bold text-white"
+                        className="text-2xl font-bold text-white"
                       >
                         Associate Software Engineer
                       </Dialog.Title>
@@ -82,10 +82,19 @@ function ExperienceModal() {
                         Jun. 2023 - Present
                       </h4>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">
-                          Your payment has been successfully submitted. We’ve
-                          sent you an email with all of the details of your
-                          order.
+                        <p className="text-md text-white">
+                          I started worked at Charles Schwab as a software
+                          developer intern from June 2022 to August 2022. I
+                          enjoyed the company culture of Charles Schwab and
+                          learned a lot in those nine weeks, thanks to my
+                          manager and technical advisors. When I was offered a
+                          role to come back full time after graduation, I was
+                          happy to accept. While my team is based primarily in
+                          Phoenix, Arizona, I work remotely in Orlando, Florida.
+                          My role in the firm is in Retirement Business
+                          Services. I have done different dev tasks such as
+                          writing new API endpoints, scripting test automation,
+                          and managing servers.
                         </p>
                       </div>
                       <button

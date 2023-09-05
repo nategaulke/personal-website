@@ -50,15 +50,15 @@ function ExperienceModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight p-8 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight py-8 pr-8 text-left align-middle shadow-xl transition-all">
                   <div className="flex">
-                    <div className="h-full w-1/3">
+                    <div className="flex h-full w-1/3 flex-col items-center">
                       <img
-                        className="h-60 rounded-lg"
+                        className="h-48 rounded-lg md:h-60"
                         src="/schwab_logo.svg"
                         alt="Schwab Logo"
                       />
-                      <div className="mt-2 flex justify-center">
+                      <div className="mt-2 flex">
                         <img
                           className="h-8 w-8 rounded-full"
                           src="/dev-icons/java.jpg"
@@ -74,15 +74,15 @@ function ExperienceModal() {
                     <div className="w-2/3">
                       <Dialog.Title
                         as="h3"
-                        className="text-2xl font-bold text-white"
+                        className="text-xl font-bold text-white md:text-2xl"
                       >
                         Associate Software Engineer
                       </Dialog.Title>
-                      <h4 className="text-md font-bold text-white">
+                      <h4 className="font-bold text-white">
                         Jun. 2023 - Present
                       </h4>
                       <div className="mt-2">
-                        <p className="text-md text-white">
+                        <p className="text-white">
                           I started worked at Charles Schwab as a software
                           developer intern from June 2022 to August 2022. I
                           enjoyed the company culture of Charles Schwab and
@@ -99,10 +99,10 @@ function ExperienceModal() {
                       </div>
                       <button
                         type="button"
-                        className="justify-center rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white"
+                        className="mt-4 rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white"
                         onClick={closeModal}
                       >
-                        Back
+                        &larr; Back
                       </button>
                     </div>
                   </div>

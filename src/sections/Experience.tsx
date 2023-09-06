@@ -8,7 +8,7 @@ function Experience() {
       <div className="mx-60 mt-12 text-black">
         <h2 className="text-6xl font-bold">experience.</h2>
         <br />
-        <div className="grid grid-cols-3">
+        <div className="relative grid w-screen grid-cols-3">
           <ExperienceModal />
         </div>
       </div>

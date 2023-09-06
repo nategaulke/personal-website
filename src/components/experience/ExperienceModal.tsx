@@ -58,14 +58,14 @@ function ExperienceModal() {
                         src="/schwab_logo.svg"
                         alt="Schwab Logo"
                       />
-                      <div className="mt-2 flex">
+                      <div className="mt-2 flex w-full justify-center">
                         <img
-                          className="h-8 w-8 rounded-full"
-                          src="/dev-icons/java.jpg"
+                          className="mx-2 aspect-square h-8 rounded-full"
+                          src="/dev-icons/java.png"
                           alt="Java"
                         />
                         <img
-                          className="h-8 w-8 rounded-full"
+                          className="mx-2 aspect-square h-8 rounded-full"
                           src="/dev-icons/spring.png"
                           alt="Spring"
                         />

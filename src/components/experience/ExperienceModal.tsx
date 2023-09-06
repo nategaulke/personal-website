@@ -1,7 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 
-function ExperienceModal() {
+function ExperienceModal(props: any) {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -18,10 +18,10 @@ function ExperienceModal() {
         <button type="button" className="rounded-lg" onClick={openModal}>
           <img
             className="aspect-square w-60 rounded-lg opacity-50"
-            src="/schwab_logo.svg"
-            alt="Schwab Logo"
+            src={props.logo}
+            alt={props.logo}
           />
-          <h3 className="mt-2 text-xl font-bold">Schwab</h3>
+          <h3 className="mt-2 text-xl font-bold">{props.jobName}</h3>
         </button>
       </div>
 
@@ -55,20 +55,17 @@ function ExperienceModal() {
                     <div className="flex h-full w-1/3 flex-col items-center">
                       <img
                         className="h-48 rounded-lg md:h-60"
-                        src="/schwab_logo.svg"
-                        alt="Schwab Logo"
+                        src={props.logo}
+                        alt={props.logo}
                       />
                       <div className="mt-2 flex w-full justify-center">
-                        <img
-                          className="mx-2 aspect-square h-8 rounded-full"
-                          src="/dev-icons/java.png"
-                          alt="Java"
-                        />
-                        <img
-                          className="mx-2 aspect-square h-8 rounded-full"
-                          src="/dev-icons/spring.png"
-                          alt="Spring"
-                        />
+                        {props.devIcons.map((devIcon: any) => (
+                          <img
+                            className="mx-2 aspect-square h-8 rounded-full"
+                            src={devIcon}
+                            alt={devIcon}
+                          />
+                        ))}
                       </div>
                     </div>
                     <div className="w-2/3">
@@ -76,26 +73,13 @@ function ExperienceModal() {
                         as="h3"
                         className="text-xl font-bold text-white md:text-2xl"
                       >
-                        Associate Software Engineer
+                        {props.jobTitle}
                       </Dialog.Title>
                       <h4 className="font-bold text-white">
-                        Jun. 2023 - Present
+                        {props.timePeriod}
                       </h4>
                       <div className="mt-2">
-                        <p className="text-white">
-                          I started worked at Charles Schwab as a software
-                          developer intern from June 2022 to August 2022. I
-                          enjoyed the company culture of Charles Schwab and
-                          learned a lot in those nine weeks, thanks to my
-                          manager and technical advisors. When I was offered a
-                          role to come back full time after graduation, I was
-                          happy to accept. While my team is based primarily in
-                          Phoenix, Arizona, I work remotely in Orlando, Florida.
-                          My role in the firm is in Retirement Business
-                          Services. I have done different dev tasks such as
-                          writing new API endpoints, scripting test automation,
-                          and managing servers.
-                        </p>
+                        <p className="text-white">{props.description}</p>
                       </div>
                       <button
                         type="button"

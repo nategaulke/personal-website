@@ -1,10 +1,10 @@
 import Modal from "../shared/Modal";
 
-function ExperienceModal(props: any) {
+function ProjectModal(props: any) {
   return (
     <Modal
-      title={props.companyName}
-      position={props.jobTitle}
+      title={props.projectName}
+      position={props.teamRole}
       timePeriod={props.timePeriod}
       description={props.description}
       logo={props.logo}
@@ -15,9 +15,9 @@ function ExperienceModal(props: any) {
           alt={props.companyName}
         />
       }
-      devIcons={props.devIcons}
+      icons={props.linkedSites}
     />
   );
 }
 
-export default ExperienceModal;
+export default ProjectModal;

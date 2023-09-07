@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="relative h-screen bg-midnight bg-cover">
+    <div className="relative min-h-screen bg-midnight bg-cover">
       <div className="mx-60 mt-12 text-white">
         <h2 className="text-6xl font-bold">about.</h2>
         <br />

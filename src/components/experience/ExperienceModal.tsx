@@ -15,7 +15,7 @@ function ExperienceModal(props: any) {
           alt={props.companyName}
         />
       }
-      devIcons={props.devIcons}
+      miniIcons={props.devIcons}
     />
   );
 }

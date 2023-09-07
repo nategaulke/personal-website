@@ -57,22 +57,22 @@ function Modal(props: any) {
                             alt={props.title}
                           />
                           <div className="mt-2 flex w-full justify-center">
-                            {props.devIcons.map((devIcon: any) => (
+                            {props.miniIcons.map((miniIcon: any) => (
                               <img
                                 className="mx-2 aspect-square h-8 rounded-full"
-                                src={devIcon}
-                                alt={devIcon}
+                                src={miniIcon}
+                                alt={miniIcon}
                               />
                             ))}
                           </div>
                         </div>
                       ) : (
                         <div className="mt-2 flex h-48 w-full items-center justify-center">
-                          {props.devIcons.map((devIcon: any) => (
+                          {props.miniIcons.map((miniIcon: any) => (
                             <img
                               className="mx-2 aspect-square h-16 rounded-full"
-                              src={devIcon}
-                              alt={devIcon}
+                              src={miniIcon}
+                              alt={miniIcon}
                             />
                           ))}
                         </div>

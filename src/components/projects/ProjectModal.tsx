@@ -4,18 +4,14 @@ function ProjectModal(props: any) {
   return (
     <Modal
       title={props.projectName}
-      position={props.teamRole}
+      position={props.position}
       timePeriod={props.timePeriod}
       description={props.description}
       logo={props.logo}
       button={
-        <img
-          className="aspect-square w-60 rounded-lg opacity-50"
-          src={props.logo}
-          alt={props.companyName}
-        />
+        <div className="aspect-square w-60 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500" />
       }
-      icons={props.linkedSites}
+      miniIcons={props.linkedSites}
     />
   );
 }

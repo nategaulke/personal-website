@@ -2,7 +2,7 @@
 
 function Intro() {
   return (
-    <div className="relative h-screen bg-[url('/bg.jpg')] bg-cover">
+    <div id="home" className="relative h-screen bg-[url('/bg.jpg')] bg-cover">
       <div className="mt-60 flex w-full items-center">
         {/* <h1>Hi</h1> */}
         <img

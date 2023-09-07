@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="relative bg-white bg-cover">
+    <div id="contact" className="relative bg-white bg-cover">
       <div className="mt-16 text-black">
         <h2 className="mx-60 text-6xl font-bold">contact.</h2>
         <div className="my-12 flex justify-center">

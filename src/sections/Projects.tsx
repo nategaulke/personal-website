@@ -2,7 +2,10 @@ import ProjectModal from "../components/projects/ProjectModal";
 
 function Projects() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-tr from-white to-gray-100 bg-cover">
+    <div
+      id="projects"
+      className="relative min-h-screen bg-gradient-to-tr from-white to-gray-100 bg-cover"
+    >
       <div className="mt-16 text-black">
         <h2 className="mx-60 text-6xl font-bold">projects.</h2>
         <div className="relative mx-40 grid h-[80vh] grid-cols-3 items-center">

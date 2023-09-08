@@ -1,7 +1,7 @@
 function About() {
   return (
     <div id="about" className="relative min-h-screen bg-midnight bg-cover">
-      <div className="mx-4 mt-12 text-white sm:mx-60">
+      <div className="ml-16 mr-6 mt-12 text-white sm:mx-60">
         <h2 className="text-6xl font-bold">about.</h2>
         <br />
         <p className="text-xl font-bold sm:text-3xl">

@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div id="contact" className="relative bg-white bg-cover">
       <div className="mt-16 text-black">
-        <h2 className="mx-4 text-6xl font-bold sm:mx-6">contact.</h2>
+        <h2 className="ml-16 text-6xl font-bold sm:mx-6">contact.</h2>
         <div className="my-12 flex justify-center">
           <a href="https://github.com/nategaulke">
             <img

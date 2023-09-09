@@ -1,11 +1,32 @@
+import { useState, useEffect } from "react";
+
 function Header() {
+  const [noShow, setNoShow] = useState(true);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 50) {
+      setNoShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
+
   const handleClick = (id: string) => {
     var element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <nav className="fixed left-0 right-0 z-10 flex bg-accent-blue bg-opacity-60 px-16 py-2">
+    <nav
+      className={`active ${
+        noShow && "hidden"
+      } fixed left-0 right-0 z-10 flex bg-accent-blue bg-opacity-60 px-16 py-2 transition-all`}
+    >
       <div className="flex w-full flex-wrap flex-wrap justify-between text-white">
         <button
           type="button"

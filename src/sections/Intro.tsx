@@ -6,7 +6,7 @@ function Intro() {
       id="home"
       className="relative h-screen bg-[url('/bg.jpg')] bg-cover bg-center"
     >
-      <div className="mt-32 w-full items-center sm:mt-60 sm:flex">
+      <div className="mt-32 w-full items-center md:flex lg:mt-60">
         <img
           className="ml-20 aspect-square h-60 rounded-full border-4 border-white sm:ml-60"
           src="/profile.png"

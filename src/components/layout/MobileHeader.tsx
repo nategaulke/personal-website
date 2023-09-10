@@ -54,11 +54,11 @@ function MobileHeader() {
                 <Dialog.Panel className="max-w-screen h-full w-full transform overflow-hidden rounded-2xl text-left transition-all">
                   <div className="flex h-[50vh] w-full flex-col flex-wrap justify-between text-white">
                     <button type="button" onClick={closeModal}>
-                      <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue transition-none" />
+                      <FaBars className="fixed left-0 right-0 m-4 flex bg-opacity-60 text-4xl text-accent-blue transition-none" />
                     </button>
                     <button
                       type="button"
-                      className="rounded border border border-transparent p-2 hover:border-white"
+                      className="mt-12 rounded border border border-transparent p-2 hover:border-white"
                       onClick={() => handleClick("home")}
                     >
                       HOME

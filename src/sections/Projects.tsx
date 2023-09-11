@@ -7,8 +7,8 @@ function Projects() {
       className="relative min-h-screen bg-gradient-to-tr from-white to-gray-100 bg-cover"
     >
       <div className="mt-16 text-black">
-        <h2 className="ml-16 text-6xl font-bold sm:mx-6">projects.</h2>
-        <div className="relative mx-40 grid h-[80vh] grid-cols-3 items-center">
+        <h2 className="ml-16 text-6xl font-bold sm:mx-60">projects.</h2>
+        <div className="relative mx-auto grid h-[80vh] w-max grid-cols-1 items-center justify-center sm:mx-40 sm:w-full sm:grid-cols-3">
           <ProjectModal
             projectName="Schwab"
             position="Associate Software Engineer"

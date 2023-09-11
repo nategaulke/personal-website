@@ -16,9 +16,16 @@ function Modal(props: any) {
   return (
     <>
       <div className="flex">
-        <button type="button" className="rounded-lg" onClick={openModal}>
+        <button
+          type="button"
+          aria-labelledby="buttonTitle"
+          className="rounded-lg"
+          onClick={openModal}
+        >
           {props.button}
-          <h3 className="mt-2 text-xl font-bold">{props.title}</h3>
+          <h3 id="buttonTitle" className="mt-2 text-xl font-bold">
+            {props.title}
+          </h3>
         </button>
       </div>
 
@@ -67,22 +74,26 @@ function Modal(props: any) {
                             alt={props.title}
                           />
                           <div className="mt-2 flex w-full justify-center">
-                            {props.miniIcons.map((miniIcon: any) => (
-                              <img
-                                className="mx-2 aspect-square h-8 rounded-full"
-                                src={miniIcon}
-                                alt={miniIcon}
-                              />
-                            ))}
+                            {props.miniIcons.map(
+                              (miniIcon: any, index: any) => (
+                                <img
+                                  className="mx-2 aspect-square h-8 rounded-full"
+                                  src={miniIcon}
+                                  alt={miniIcon}
+                                  key={index}
+                                />
+                              )
+                            )}
                           </div>
                         </div>
                       ) : (
                         <div className="mt-2 flex h-48 w-full items-center justify-center">
-                          {props.miniIcons.map((miniIcon: any) => (
+                          {props.miniIcons.map((miniIcon: any, index: any) => (
                             <img
                               className="mx-2 aspect-square h-16 rounded-full"
                               src={miniIcon}
                               alt={miniIcon}
+                              key={index}
                             />
                           ))}
                         </div>

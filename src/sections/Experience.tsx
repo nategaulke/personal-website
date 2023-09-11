@@ -1,4 +1,8 @@
-import ExperienceModal from "../components/experience/ExperienceModal";
+import { lazy } from "react";
+
+const ExperienceModal = lazy(
+  () => import("../components/experience/ExperienceModal")
+);
 
 function Experience() {
   return (

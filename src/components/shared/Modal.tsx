@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 function Modal(props: any) {
   let [isOpen, setIsOpen] = useState(false);
@@ -46,9 +47,18 @@ function Modal(props: any) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight py-8 pr-8 text-left align-middle shadow-xl transition-all">
-                  <div className="flex">
-                    <div className="flex h-full w-1/3 flex-col items-center">
+                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight px-8 py-8 text-left align-middle shadow-xl transition-all sm:px-0 sm:pr-8">
+                  <div className="sm:flex">
+                    {isMobile && (
+                      <button
+                        type="button"
+                        className="text-md mb-4 rounded-md border border-transparent bg-transparent px-2 py-1 font-medium text-white hover:border-white"
+                        onClick={closeModal}
+                      >
+                        &larr; Back
+                      </button>
+                    )}
+                    <div className="flex h-full w-auto flex-col items-center sm:w-1/3">
                       {props.logo ? (
                         <div>
                           <img
@@ -78,22 +88,24 @@ function Modal(props: any) {
                         </div>
                       )}
                     </div>
-                    <div className="w-2/3">
+                    <div className="w-auto items-center justify-center sm:w-2/3">
                       <Dialog.Title
                         as="h3"
-                        className="text-xl font-bold text-white md:text-2xl"
+                        className="text-center text-xl font-bold text-white sm:text-left md:text-2xl"
                       >
                         {props.position}
                       </Dialog.Title>
-                      <h4 className="font-bold text-white">
+                      <h4 className="text-center font-bold text-white sm:text-left">
                         {props.timePeriod}
                       </h4>
                       <div className="mt-2">
-                        <p className="text-white">{props.description}</p>
+                        <p className="text-justify text-white">
+                          {props.description}
+                        </p>
                       </div>
                       <button
                         type="button"
-                        className="mt-4 rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white"
+                        className="mt-4 w-full rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white sm:w-max"
                         onClick={closeModal}
                       >
                         &larr; Back

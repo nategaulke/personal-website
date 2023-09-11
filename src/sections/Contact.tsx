@@ -10,7 +10,7 @@ function Contact() {
             <FaGithub className="mr-12 aspect-square rounded text-8xl hover:opacity-50" />
           </a>
           <a href="https://www.linkedin.com/in/nategaulke/">
-            <FaLinkedin className="ml-12 aspect-square rounded text-8xl hover:opacity-50" />
+            <FaLinkedin className="ml-12 aspect-square rounded text-8xl text-[#0077b7] hover:opacity-50" />
           </a>
         </div>
       </div>

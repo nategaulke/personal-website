@@ -27,7 +27,7 @@ function Header() {
         noShow && "hidden"
       } fixed left-0 right-0 z-10 flex bg-accent-blue bg-opacity-60 px-16 py-2 transition-all`}
     >
-      <div className="flex w-full flex-wrap flex-wrap justify-between text-white">
+      <div className="flex w-full flex-wrap justify-between text-white">
         <button
           type="button"
           className="rounded border border border-transparent p-1 hover:border-white"

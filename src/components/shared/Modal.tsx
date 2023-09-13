@@ -19,7 +19,7 @@ function Modal(props: any) {
         <button
           type="button"
           aria-labelledby="buttonTitle"
-          className="rounded-lg"
+          className="rounded-lg duration-200 hover:-translate-y-2"
           onClick={openModal}
         >
           {props.button}

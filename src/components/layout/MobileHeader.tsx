@@ -14,8 +14,9 @@ function MobileHeader() {
   }
 
   const handleClick = (id: string) => {
-    var element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    setTimeout(() => void element?.scrollIntoView({ behavior: "smooth" }));
+    closeModal();
   };
 
   return (
@@ -38,7 +39,7 @@ function MobileHeader() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-black bg-opacity-75" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-y-auto">
             <div className="min-h-full">
@@ -49,7 +50,7 @@ function MobileHeader() {
                 enterTo="opacity-100 scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
+                leaveTo="opacity-0"
               >
                 <Dialog.Panel className="max-w-screen h-full w-full transform overflow-hidden rounded-2xl text-left transition-all">
                   <div className="flex h-[50vh] w-full flex-col flex-wrap justify-between text-white">

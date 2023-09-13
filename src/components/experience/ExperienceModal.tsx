@@ -10,7 +10,7 @@ function ExperienceModal(props: any) {
       logo={props.logo}
       button={
         <img
-          className="aspect-square w-60 rounded-lg opacity-50 transition delay-150 duration-300 ease-in-out hover:w-64 hover:-translate-y-1 hover:scale-110 hover:opacity-100"
+          className="aspect-square w-60 rounded-lg opacity-75 transition ease-in-out hover:opacity-100"
           src={props.logo}
           alt={props.companyName}
         />

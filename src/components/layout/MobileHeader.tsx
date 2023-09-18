@@ -1,8 +1,30 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 
 function MobileHeader() {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    console.log("scrollY: " + window.scrollY + " lastScrollY: " + lastScrollY);
+    if (window.scrollY > lastScrollY) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+
+    // remember current page location to use in the next move
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -24,7 +46,11 @@ function MobileHeader() {
       <div className="flex">
         {!isOpen && (
           <button type="button" aria-label="Menu" onClick={openModal}>
-            <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue" />
+            <FaBars
+              className={`fixed ${
+                show ? `visible` : `invisible`
+              } left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue`}
+            />
           </button>
         )}
       </div>

@@ -18,7 +18,7 @@ function Experience() {
     >
       <div className="mt-16 text-black">
         <h2 className="ml-16 text-6xl font-bold sm:mx-60">experience.</h2>
-        <div className="relative mx-auto grid h-[80vh] w-max grid-cols-1 items-center justify-center sm:mx-40 sm:w-full sm:grid-cols-3">
+        <div className="relative flex h-[80vh] flex-wrap justify-around">
           <ExperienceModal
             companyName="Schwab"
             jobTitle="Associate Software Engineer"

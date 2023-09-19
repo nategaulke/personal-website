@@ -17,7 +17,9 @@ function Experience() {
       className="relative min-h-screen bg-gradient-to-br from-white to-gray-100 bg-cover"
     >
       <div className="mt-16 text-black">
-        <h2 className="ml-16 text-6xl font-bold sm:mx-60">experience.</h2>
+        <h2 className="text-center text-6xl font-bold lg:mx-60 lg:text-left">
+          experience.
+        </h2>
         <div className="relative flex h-[80vh] flex-wrap justify-around">
           <ExperienceModal
             companyName="Schwab"

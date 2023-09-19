@@ -1,10 +1,10 @@
 function About() {
   return (
     <div id="about" className="relative min-h-screen bg-midnight bg-cover">
-      <div className="ml-16 mr-6 mt-12 text-white sm:mx-60">
-        <h2 className="text-6xl font-bold">about.</h2>
+      <div className="mt-12 text-white lg:mx-60">
+        <h2 className="text-center text-6xl font-bold lg:text-left">about.</h2>
         <br />
-        <p className="text-xl font-bold sm:text-3xl">
+        <p className="mb-8 ml-14 mr-14 text-xl font-bold lg:mb-0 lg:ml-0 lg:mr-0 lg:text-3xl">
           I’ve always been interested in technology, more than anyone else in my
           family. My mom always said I would become an engineer. For a while, I
           thought that meant being a mechanical engineer. But after taking a

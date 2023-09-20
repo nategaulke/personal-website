@@ -15,7 +15,7 @@ function Modal(props: any) {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex justify-center">
         <button
           type="button"
           aria-labelledby="buttonTitle"

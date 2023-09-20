@@ -1,36 +1,13 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useState } from "react";
 import { FaBars } from "react-icons/fa";
 
 function MobileHeader() {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    console.log("scrollY: " + window.scrollY + " lastScrollY: " + lastScrollY);
-    if (window.scrollY > lastScrollY) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-
-    // remember current page location to use in the next move
-    setLastScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => {
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, [lastScrollY]);
-
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
   }
-
   function openModal() {
     setIsOpen(true);
   }
@@ -46,11 +23,7 @@ function MobileHeader() {
       <div className="flex">
         {!isOpen && (
           <button type="button" aria-label="Menu" onClick={openModal}>
-            <FaBars
-              className={`fixed ${
-                show ? `visible` : `invisible`
-              } left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue`}
-            />
+            <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue" />
           </button>
         )}
       </div>
@@ -72,7 +45,7 @@ function MobileHeader() {
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
-                enterFrom="opacity-0 scale-95"
+                enterFrom="opacity-0"
                 enterTo="opacity-100 scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
@@ -81,7 +54,7 @@ function MobileHeader() {
                 <Dialog.Panel className="max-w-screen h-full w-full transform overflow-hidden rounded-2xl text-left transition-all">
                   <div className="flex h-[50vh] w-full flex-col flex-wrap justify-between text-white">
                     <button type="button" onClick={closeModal}>
-                      <FaBars className="fixed left-0 right-0 m-4 flex bg-opacity-60 text-4xl text-accent-blue transition-none" />
+                      <FaBars className="fixed left-0 right-0 m-4 flex bg-opacity-60 text-4xl text-white transition-none" />
                     </button>
                     <button
                       type="button"

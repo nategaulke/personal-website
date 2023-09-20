@@ -23,7 +23,7 @@ function MobileHeader() {
       <div className="flex">
         {!isOpen && (
           <button type="button" aria-label="Menu" onClick={openModal}>
-            <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue" />
+            <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue mix-blend-luminosity" />
           </button>
         )}
       </div>

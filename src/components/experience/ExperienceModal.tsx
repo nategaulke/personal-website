@@ -1,6 +1,7 @@
 import Modal from "../shared/Modal";
 import { FaJava } from "react-icons/fa";
 import { SiSpring } from "react-icons/si";
+import ExperienceButton from "./ExperienceButton";
 
 let devIcons: JSX.Element[] = [];
 devIcons.push(<FaJava />);
@@ -14,13 +15,7 @@ function ExperienceModal(props: any) {
       timePeriod={props.timePeriod}
       description={props.description}
       logo={props.logo}
-      button={
-        <img
-          className="aspect-square w-60 rounded-lg opacity-75 transition ease-in-out hover:opacity-100"
-          src={props.logo}
-          alt={props.companyName}
-        />
-      }
+      button={<ExperienceButton />}
       miniIcons={devIcons}
     />
   );

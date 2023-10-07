@@ -1,4 +1,10 @@
 import Modal from "../shared/Modal";
+import { FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+
+let devIcons: JSX.Element[] = [];
+devIcons.push(<FaJava />);
+devIcons.push(<SiSpring />);
 
 function ExperienceModal(props: any) {
   return (
@@ -15,7 +21,7 @@ function ExperienceModal(props: any) {
           alt={props.companyName}
         />
       }
-      miniIcons={props.devIcons}
+      miniIcons={devIcons}
     />
   );
 }

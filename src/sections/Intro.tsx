@@ -1,7 +1,23 @@
 import { TypeAnimation } from "react-type-animation";
 import { IoIosArrowDown } from "react-icons/io";
+import { useEffect, useState } from "react";
 
 function Intro() {
+  const [show, setShow] = useState(true);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 50) {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);
+
   const handleClick = (id: string) => {
     var element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -31,7 +47,9 @@ function Intro() {
       <div className="absolute bottom-16 left-0 right-0 flex w-full justify-center lg:bottom-4">
         <button
           type="button"
-          className="hover-bg-white rounded-full bg-transparent p-2 opacity-75 hover:bg-white hover:bg-opacity-50 hover:opacity-100"
+          className={`rounded-full ${
+            show ? `` : `hidden`
+          } bg-transparent p-2 opacity-75 hover:bg-white hover:bg-opacity-50 hover:opacity-100`}
           onClick={() => handleClick("about")}
         >
           <IoIosArrowDown className="text-6xl text-white" />

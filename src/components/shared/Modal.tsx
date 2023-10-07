@@ -54,12 +54,12 @@ function Modal(props: any) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-midnight px-8 py-8 text-left align-middle shadow-xl transition-all sm:px-0 sm:pr-8">
+                <Dialog.Panel className="h-full w-full max-w-5xl transform overflow-hidden rounded-2xl border-4 border-cyan-500 bg-white px-8 py-8 text-left align-middle shadow-xl transition-all sm:px-0 sm:pr-8">
                   <div className="sm:flex">
                     {isMobile && (
                       <button
                         type="button"
-                        className="text-md mb-4 rounded-md border border-transparent bg-transparent px-2 py-1 font-medium text-white hover:border-white"
+                        className="text-md mb-4 rounded-md border border-transparent bg-transparent px-2 py-1 font-medium text-black hover:border-white"
                         onClick={closeModal}
                       >
                         &larr; Back
@@ -102,21 +102,21 @@ function Modal(props: any) {
                     <div className="w-auto items-center justify-center sm:w-2/3">
                       <Dialog.Title
                         as="h3"
-                        className="text-center text-xl font-bold text-white sm:text-left md:text-2xl"
+                        className="text-center text-xl font-bold text-black sm:text-left md:text-2xl"
                       >
                         {props.position}
                       </Dialog.Title>
-                      <h4 className="text-center font-bold text-white sm:text-left">
+                      <h4 className="text-center font-bold text-black sm:text-left">
                         {props.timePeriod}
                       </h4>
                       <div className="mt-2">
-                        <p className="text-justify text-white">
+                        <p className="text-justify text-black">
                           {props.description}
                         </p>
                       </div>
                       <button
                         type="button"
-                        className="mt-4 w-full rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-white hover:border-white sm:w-max"
+                        className="mt-4 w-full rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-black hover:border-black sm:w-max"
                         onClick={closeModal}
                       >
                         &larr; Back

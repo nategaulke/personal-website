@@ -27,7 +27,7 @@ function ExperienceButton() {
             </div>
           </div>
         </div>
-        <div className="justify-end text-blue-700 hover:underline">
+        <div className="justify-end text-left text-blue-700 hover:underline">
           See More
         </div>
       </div>

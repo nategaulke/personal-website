@@ -15,20 +15,14 @@ function Modal(props: any) {
 
   return (
     <>
-      <div className="flex justify-center">
-        <button
-          type="button"
-          aria-labelledby="buttonTitle"
-          className="rounded-lg duration-200 hover:-translate-y-2"
-          onClick={openModal}
-        >
-          {props.button}
-          <h3 id="buttonTitle" className="mt-2 text-xl font-bold">
-            {props.title}
-          </h3>
-        </button>
-      </div>
-
+      <button
+        type="button"
+        aria-labelledby="buttonTitle"
+        className="flex w-full justify-center rounded-lg duration-200 hover:-translate-y-2"
+        onClick={openModal}
+      >
+        {props.button}
+      </button>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child

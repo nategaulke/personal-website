@@ -28,7 +28,6 @@ function Experience() {
           />
         </div>
       </div>
-      <ExperienceButton />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import { isMobile } from "react-device-detect";
 
 function Modal(props: any) {
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);

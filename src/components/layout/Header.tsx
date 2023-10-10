@@ -17,7 +17,7 @@ function Header() {
   }, []);
 
   const handleClick = (id: string) => {
-    var element = document.getElementById(id);
+    const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
 

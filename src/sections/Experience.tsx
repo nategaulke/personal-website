@@ -1,11 +1,10 @@
 import { lazy } from "react";
-import ExperienceButton from "../components/experience/ExperienceButton";
 
 const ExperienceModal = lazy(
   () => import("../components/experience/ExperienceModal")
 );
 
-let devTools: String[] = ["Java", "Spring"];
+const devTools: string[] = ["Java", "Spring"];
 
 function Experience() {
   return (

@@ -63,19 +63,14 @@ function Modal(props: any) {
                       {props.logo ? (
                         <div>
                           <img
-                            className="h-48 rounded-lg md:h-60"
+                            className="aspect-square h-48 rounded-lg md:h-60"
                             src={props.logo}
                             alt={props.title}
                           />
-                          <div className="mt-2 flex w-full justify-center">
+                          <div className="mt-2 flex flex-wrap w-full justify-center">
                             {props.miniIcons.map(
                               (miniIcon: any, index: any) => (
-                                <div
-                                  className="mx-2 rounded-full bg-white text-3xl text-black"
-                                  key={index}
-                                >
-                                  {miniIcon}
-                                </div>
+                                <div key={index}>{miniIcon}</div>
                               )
                             )}
                           </div>

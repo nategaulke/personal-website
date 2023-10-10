@@ -1,13 +1,14 @@
 import Modal from "../shared/Modal";
-import { FaJava } from "react-icons/fa";
-import { SiSpring } from "react-icons/si";
 import ExperienceButton from "./ExperienceButton";
-
-let devIcons: JSX.Element[] = [];
-devIcons.push(<FaJava />);
-devIcons.push(<SiSpring />);
+import TechPill from "./TechPill";
 
 function ExperienceModal(props: any) {
+  const devTools: string[] = ["Java", "Spring Framework"];
+
+  const devIcons = devTools.map((devTool: any, index: any) => (
+    <TechPill name={devTool} index={index} />
+  ));
+
   return (
     <Modal
       title={props.companyName}
@@ -15,7 +16,15 @@ function ExperienceModal(props: any) {
       timePeriod={props.timePeriod}
       description={props.description}
       logo={props.logo}
-      button={<ExperienceButton />}
+      button={
+        <ExperienceButton
+          companyName={props.companyName}
+          jobTitle={props.jobTitle}
+          timePeriod={props.timePeriod}
+          logo={props.logo}
+          devTools={devTools}
+        />
+      }
       miniIcons={devIcons}
     />
   );

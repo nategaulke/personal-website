@@ -18,7 +18,7 @@ function Modal(props: any) {
       <button
         type="button"
         aria-labelledby="buttonTitle"
-        className="flex w-full justify-center rounded-lg duration-200 hover:-translate-y-2"
+        className="flex justify-center rounded-lg duration-200 hover:-translate-y-2"
         onClick={openModal}
       >
         {props.button}
@@ -67,7 +67,7 @@ function Modal(props: any) {
                             src={props.logo}
                             alt={props.title}
                           />
-                          <div className="mt-2 flex flex-wrap w-full justify-center">
+                          <div className="mt-2 flex w-full flex-wrap justify-center">
                             {props.miniIcons.map(
                               (miniIcon: any, index: any) => (
                                 <div key={index}>{miniIcon}</div>

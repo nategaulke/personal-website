@@ -16,7 +16,7 @@ function Experience() {
         <h2 className="text-center text-6xl font-bold lg:mx-60 lg:text-left">
           experience.
         </h2>
-        <div className="relative mt-12 min-h-[80vh] items-center">
+        <div className="mx-12 mt-12">
           <ExperienceModal
             companyName="Schwab"
             jobTitle="Associate Software Engineer"
@@ -25,6 +25,7 @@ function Experience() {
             logo="/schwab_logo.png"
             devTools={devTools}
           />
+          <div className="z-10 flex h-[100vh] min-h-full w-1 flex-col items-center justify-center justify-center overflow-y-auto bg-gradient-to-b from-cyan-500 to-blue-500"></div>
         </div>
       </div>
     </div>

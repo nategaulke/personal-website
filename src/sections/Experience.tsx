@@ -17,6 +17,9 @@ function Experience() {
           experience.
         </h2>
         <div className="mx-12 mt-12">
+          <div className="absolute left-0 right-0 z-10 w-full items-center justify-center">
+            <div className="mx-auto flex h-[80vh] min-h-full w-1 flex-col overflow-y-auto bg-gradient-to-b from-cyan-500 to-blue-500" />
+          </div>
           <ExperienceModal
             companyName="Schwab"
             jobTitle="Associate Software Engineer"
@@ -25,7 +28,6 @@ function Experience() {
             logo="/schwab_logo.png"
             devTools={devTools}
           />
-          <div className="z-10 flex h-[100vh] min-h-full w-1 flex-col items-center justify-center justify-center overflow-y-auto bg-gradient-to-b from-cyan-500 to-blue-500"></div>
         </div>
       </div>
     </div>

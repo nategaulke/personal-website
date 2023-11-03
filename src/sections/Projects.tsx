@@ -4,8 +4,8 @@ import { SiSpring } from "react-icons/si";
 
 const ProjectModal = lazy(() => import("../components/projects/ProjectModal"));
 
-let linkedSites: JSX.Element[] = [];
-linkedSites.push(<FaJava />);
+let linkedSites: JSX.Element[] = [<FaJava />, <SiSpring />];
+linkedSites.push();
 linkedSites.push(<SiSpring />);
 
 function Projects() {

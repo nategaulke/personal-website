@@ -11,6 +11,7 @@ function Contact() {
           <a
             href="https://github.com/nategaulke"
             aria-label="Github"
+            target="_blank"
             className="mr-12"
           >
             <FaGithub className="aspect-square rounded text-8xl hover:opacity-50" />
@@ -18,6 +19,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/nategaulke/"
             aria-label="LinkedIn"
+            target="_blank"
             className="ml-12"
           >
             <FaLinkedin className="aspect-square rounded text-8xl text-[#0077b7] hover:opacity-50" />

@@ -3,9 +3,7 @@ import ExperienceButton from "./ExperienceButton";
 import TechPill from "./TechPill";
 
 function ExperienceModal(props: any) {
-  const devTools: string[] = ["Java", "Spring Framework"];
-
-  const devIcons = devTools.map((devTool: any, index: any) => (
+  const devIcons = props.devTools.map((devTool: any, index: any) => (
     <TechPill name={devTool} index={index} />
   ));
 
@@ -22,7 +20,7 @@ function ExperienceModal(props: any) {
           jobTitle={props.jobTitle}
           timePeriod={props.timePeriod}
           logo={props.logo}
-          devTools={devTools}
+          devTools={props.devTools}
         />
       }
       miniIcons={devIcons}

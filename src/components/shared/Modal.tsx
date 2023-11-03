@@ -2,6 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { isMobile } from "react-device-detect";
 import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 function Modal(props: any) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,37 @@ function Modal(props: any) {
 
   function openModal() {
     setIsOpen(true);
+  }
+
+  function getLinkSymbols() {
+    let websites: JSX.Element[] = [];
+    if (props.linkedSites != null) {
+      for (let i = 0; i < props.linkedSites.length; i++) {
+        if (props.linkedSites[i].toLowerCase().includes("github")) {
+          websites.push(
+            <a
+              href={props.linkedSites[i]}
+              target="_blank"
+              className="px-2 text-3xl font-medium text-black hover:opacity-70"
+            >
+              <FaGithub />
+            </a>
+          );
+        } else {
+          websites.push(
+            <a
+              href={props.linkedSites[i]}
+              target="_blank"
+              className="px-2 text-3xl font-medium text-black hover:opacity-70"
+            >
+              <TbWorld />
+            </a>
+          );
+        }
+      }
+      return <div className="flex">{websites}</div>;
+    }
+    return <div />;
   }
 
   return (
@@ -109,22 +141,7 @@ function Modal(props: any) {
                         >
                           &larr; Back
                         </button>
-                        <div className="flex">
-                          <a
-                            href="https://github.com/nategaulke"
-                            target="_blank"
-                            className="px-2 text-3xl font-medium text-black hover:opacity-70"
-                          >
-                            <FaGithub />
-                          </a>
-                          <a
-                            href="https://github.com/nategaulke"
-                            target="_blank"
-                            className="px-2 text-3xl font-medium text-black hover:opacity-70"
-                          >
-                            <FaGithub />
-                          </a>
-                        </div>
+                        {getLinkSymbols()}
                       </div>
                     </div>
                   </div>

@@ -16,7 +16,7 @@ function ProjectModal(props: any) {
           </h3>
         </div>
       }
-      miniIcons={props.linkedSites}
+      linkedSites={props.linkedSites}
     />
   );
 }

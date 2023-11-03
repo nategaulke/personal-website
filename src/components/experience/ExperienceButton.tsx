@@ -14,10 +14,10 @@ function ExperienceButton(props: any) {
       </div>
       <div className="ml-4 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg font-bold text-black sm:text-left md:text-lg">
+          <h3 className="text-md font-bold text-black sm:text-left md:text-lg">
             {props.companyName} - {props.jobTitle}
           </h3>
-          <h4 className="text-center font-bold text-black sm:text-left">
+          <h4 className="md:text-md text-center text-sm italic text-black sm:text-left md:font-bold md:not-italic">
             {props.timePeriod}
           </h4>
           <div className="mt-2">

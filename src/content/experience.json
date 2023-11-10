@@ -1,0 +1,42 @@
+[
+    {
+        "companyName": "Schwab",
+        "jobTitle": "Associate Software Engineer",
+        "timePeriod": "Jun. 2023 - Present",
+        "description": "I returned to Charles Schwab after my internship. Since then, I have led the effort of updating their servers for four different applications. I have also created new API endpoints for two different applications in the company's Retirement Business Services. As part of their new employeee program, I have earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master I.",
+        "logo": "/schwab_logo.png",
+        "devTools": ["Java", "Spring", "Google Cloud", "Scrum"]
+    },
+    {
+        "companyName": "Schwab",
+        "jobTitle": "Software Engineer Intern",
+        "timePeriod": "Jun. 2022 - Aug. 2022",
+        "description": "",
+        "logo": "/schwab_logo.png",
+        "devTools": ["Java", "Spring", "Cucumber", "Gherkin"]
+    },
+    {
+        "companyName": "UCF",
+        "jobTitle": "Teaching Assistant",
+        "timePeriod": "Jan. 2022 - May 2023",
+        "description": "",
+        "logo": "/schwab_logo.png",
+        "devTools": ["C", "Java", "Data Structures"]
+    },
+    {
+        "companyName": "Knight Hacks",
+        "jobTitle": "Treasurer / Dev Team",
+        "timePeriod": "Jan. 2022 - Dec. 2022",
+        "description": "",
+        "logo": "/schwab_logo.png",
+        "devTools": ["Leadership", "React", "Tailwind CSS", "TypeScript"]
+    },
+    {
+        "companyName": "UCF",
+        "jobTitle": "Resident Assistant",
+        "timePeriod": "Aug. 2020 - May 2023",
+        "description": "",
+        "logo": "/schwab_logo.png",
+        "devTools": ["Leadership", "Time Management", "Communication"]
+    }
+]

@@ -2,11 +2,11 @@ import TechPill from "./TechPill";
 
 function ExperienceButton(props: any) {
   return (
-    <div className="z-10 w-max overflow-hidden text-ellipsis rounded-lg border border-2 bg-white p-4 shadow duration-200 hover:shadow-none sm:flex sm:w-[80vw] sm:w-auto lg:w-[40vw]">
+    <div className="z-10 w-max overflow-hidden text-ellipsis rounded-lg border border-2 bg-white p-4 shadow duration-200 hover:shadow-none sm:flex sm:w-[80vw] lg:w-[40vw]">
       <div>
-        <div className="flex justify-center">
+        <div className="flex justify-center sm:w-max">
           <img
-            className="aspect-sqaure h-40 rounded-lg"
+            className="aspect-sqaure h-40 w-40 rounded-lg"
             src={props.logo}
             alt={props.companyName}
           />
@@ -15,7 +15,10 @@ function ExperienceButton(props: any) {
       {/* flex h-full w-auto flex-col items-center sm:w-1/3 */}
       <div className="ml-0 mt-4 flex flex-col justify-between sm:ml-4 sm:mt-0">
         <div>
-          <h3 className="text-md font-bold text-black sm:text-left md:text-lg">
+          <h3
+            id="buttonTitle"
+            className="text-md font-bold text-black sm:text-left md:text-lg"
+          >
             {props.companyName} - {props.jobTitle}
           </h3>
           <h4 className="md:text-md text-center text-sm italic text-black sm:text-left md:font-bold md:not-italic">

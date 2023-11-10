@@ -25,6 +25,7 @@ function Modal(props: any) {
               href={props.linkedSites[i]}
               target="_blank"
               className="px-2 text-3xl font-medium text-black hover:opacity-70"
+              key={i}
             >
               <FaGithub />
             </a>
@@ -35,6 +36,7 @@ function Modal(props: any) {
               href={props.linkedSites[i]}
               target="_blank"
               className="px-2 text-3xl font-medium text-black hover:opacity-70"
+              key={i}
             >
               <TbWorld />
             </a>

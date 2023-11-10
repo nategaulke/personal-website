@@ -51,6 +51,7 @@ function Intro() {
             show ? `` : `hidden`
           } bg-transparent p-2 opacity-75 hover:bg-white hover:bg-opacity-50 hover:opacity-100`}
           onClick={() => handleClick("about")}
+          aria-label="Continue Page Down"
         >
           <IoIosArrowDown className="text-6xl text-white" />
         </button>

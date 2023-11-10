@@ -3,40 +3,40 @@
         "companyName": "Schwab",
         "jobTitle": "Associate Software Engineer",
         "timePeriod": "Jun. 2023 - Present",
-        "description": "I returned to Charles Schwab after my internship. Since then, I have led the effort of updating their servers for four different applications. I have also created new API endpoints for two different applications in the company's Retirement Business Services. As part of their new employeee program, I have earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master I.",
-        "logo": "/schwab_logo.png",
+        "description": "I returned to Charles Schwab after my internship. Since then, I have led the effort of updating their servers for four different applications. I have also created new API endpoints for two different applications in the company's Retirement Business Services. As part of their new employeee program, I have earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master. I work remote in the Orlando area.",
+        "logo": "/schwab_logo.webp",
         "devTools": ["Java", "Spring", "Google Cloud", "Scrum"]
     },
     {
         "companyName": "Schwab",
         "jobTitle": "Software Engineer Intern",
         "timePeriod": "Jun. 2022 - Aug. 2022",
-        "description": "",
-        "logo": "/schwab_logo.png",
+        "description": "I accepted an internship with Charles Schwab in October 2021, having already been a client of the business already. As an intern, I worked with Java and Spring to create two new endpoints for fetching prices of assets. I automated testing of a webpage using Cucumber for Java and Gherkin, cutting time from QA review. Throughout my time, I explored the Scrum process, SQL, Continuous Integration/Development, and Splunk. I worked in their corporate Phoenix office",
+        "logo": "/schwab_logo.webp",
         "devTools": ["Java", "Spring", "Cucumber", "Gherkin"]
     },
     {
         "companyName": "UCF",
         "jobTitle": "Teaching Assistant",
         "timePeriod": "Jan. 2022 - May 2023",
-        "description": "",
-        "logo": "/schwab_logo.png",
-        "devTools": ["C", "Java", "Data Structures"]
+        "description": "I was asked by Professor Sean Szumlanski to jonin his TA Team after completing the core data structures and algorithms courses. I advised roughly 20 students per month per month during office hours. I answered questions on the programming assignnments, lectures, and the notes, both for C and Java languages. Overall, I evaluated 200 students in four sections of the courses, grading 200 programming assignments and 100 exams per semester.",
+        "logo": "/ucf_logo.webp",
+        "devTools": ["C", "Java", "Data Structures", "OOP"]
     },
     {
         "companyName": "Knight Hacks",
-        "jobTitle": "Treasurer / Dev Team",
-        "timePeriod": "Jan. 2022 - Dec. 2022",
-        "description": "",
-        "logo": "/schwab_logo.png",
-        "devTools": ["Leadership", "React", "Tailwind CSS", "TypeScript"]
+        "jobTitle": "Treasurer",
+        "timePeriod": "Jan. 2022 - May. 2022",
+        "description": "During the spring semester, I joined the executive board of the university's largest Computer Science-focused student organization as the Treasurer. Beforehand, I served as part of the Sponsorship Team, securing donations from companies such as Microsoft, Google Cloud, EA Sports, and ManTech for our hackathon. I managed the organization's $10,000 budget and finances. With the executive board, I coordinated club logistics by scheduling over 20 events, hiring directors, answering member questions, and ordering merchandise.",
+        "logo": "/knighthacks_logo.webp",
+        "devTools": ["Leadership", "Teamwork"]
     },
     {
         "companyName": "UCF",
         "jobTitle": "Resident Assistant",
         "timePeriod": "Aug. 2020 - May 2023",
-        "description": "",
-        "logo": "/schwab_logo.png",
+        "description": "As an RA, I guided freshman residents living on campus by establishing connections, leading them to resources, and assisting them by answering their questions. Each semester, I managed a floor of over 50 residents. I decorated the floor and updated the walls with posters of clubs and upcoming events. I was also tasked with creating a safe enviornment for students which is why I was trained for crisis response.",
+        "logo": "/ucf_logo.webp",
         "devTools": ["Leadership", "Time Management", "Communication"]
     }
 ]

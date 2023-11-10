@@ -12,7 +12,6 @@ function ExperienceButton(props: any) {
           />
         </div>
       </div>
-      {/* flex h-full w-auto flex-col items-center sm:w-1/3 */}
       <div className="ml-0 mt-4 flex flex-col justify-between sm:ml-4 sm:mt-0">
         <div>
           <h3

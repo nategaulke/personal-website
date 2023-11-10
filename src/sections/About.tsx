@@ -9,13 +9,13 @@ function About() {
           family. My mom always said I would become an engineer. For a while, I
           thought that meant being a mechanical engineer. But after taking a
           programming class in college, I found my passion in software
-          engineering.
+          engineering. I graduated with my B.S. degree in Computer Science from
+          the University of Central Florida in May 2023.
           <br />
           <br />
-          The marriage of creative problem solving and technology was amazing to
-          me. Today, I continue to explore the field both in and out of my job.
-          Outside of software engineering, I am passionate about the outdoors,
-          traveling, and animation.
+          Today, I continue to explore the software engineering and technology
+          both in and out of my job. Outside of software engineering, I am
+          passionate about the outdoors, traveling, and animation.
         </p>
       </div>
     </div>

@@ -1,4 +1,6 @@
 import { lazy } from "react";
+import list from "../content/projects.json";
+
 const ProjectModal = lazy(() => import("../components/projects/ProjectModal"));
 
 function Projects() {

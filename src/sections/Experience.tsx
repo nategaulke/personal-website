@@ -24,6 +24,7 @@ function Experience() {
               className={`w-min self-center ${
                 index % 2 == 0 ? "md:self-start" : "md:self-end"
               }`}
+              key={index}
             >
               <ExperienceModal
                 companyName={experience.companyName}

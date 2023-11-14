@@ -105,11 +105,15 @@ function Modal(props: any) {
                           src={props.logo}
                           alt={props.title}
                         />
-                        <div className="mt-2 flex w-full flex-wrap justify-center">
-                          {props.miniIcons.map((miniIcon: any, index: any) => (
-                            <div key={index}>{miniIcon}</div>
-                          ))}
-                        </div>
+                        {props.miniIcons ? (
+                          <div className="mt-2 flex w-full flex-wrap justify-center">
+                            {props.miniIcons.map(
+                              (miniIcon: any, index: any) => (
+                                <div key={index}>{miniIcon}</div>
+                              )
+                            )}
+                          </div>
+                        ) : null}
                       </div>
                     ) : null}
                     <div

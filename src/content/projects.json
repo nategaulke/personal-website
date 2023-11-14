@@ -1,10 +1,46 @@
 [
     {
-        "projectName" : "",
-        "position" : "",
-        "timePeriod" : "",
-        "description" : "",
-        "linkedSites" : [],
-        "logo" : ""
+        "projectName" : "Portfolio Website",
+        "position" : "Developer",
+        "timePeriod" : "Aug. 2022 - May 2023",
+        "description" : "Description Goes Here",
+        "linkedSites" : ["https://github.com/nategaulke/personal-website"],
+        "color" : "blue"
+    },
+    {
+        "projectName" : "MovieMentor",
+        "position" : "Lead Frontend Developer",
+        "timePeriod" : "Aug. 2022 - May 2023",
+        "description" : "Description Goes Here",
+        "linkedSites" : ["https://github.com/ContentWarnings/WebFrontend", "https://moviementor.app/"],
+        "logo" : "/moviementor.webp",
+        "color" : "violet"
+    },
+    {
+        "projectName" : "Multithreaded Matrix Multiplication",
+        "position" : "Lead Frontend Developer",
+        "timePeriod" : "Aug. 2022 - May 2023",
+        "description" : "Description Goes Here",
+        "linkedSites" : ["https://github.com/ElijahMSmith/COP4520_Project"],
+        "logo" : "/moviementor.webp",
+        "color" : "green"
+    },
+    {
+        "projectName" : "Meet4Meal",
+        "position" : "Lead Frontend Developer",
+        "timePeriod" : "Aug. 2022 - May 2023",
+        "description" : "Description Goes Here",
+        "linkedSites" : ["https://github.com/nategaulke/MealShareApp-FE"],
+        "logo" : "/moviementor.webp",
+        "color" : "blue"
+    },
+    {
+        "projectName" : "Knight Assistant",
+        "position" : "Lead Frontend Developer",
+        "timePeriod" : "Aug. 2022 - May 2023",
+        "description" : "Description Goes Here",
+        "linkedSites" : ["https://github.com/nategaulke/Knight-Assistant"],
+        "logo" : "/moviementor.webp",
+        "color" : "yellow"
     }
 ]

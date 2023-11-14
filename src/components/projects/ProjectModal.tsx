@@ -1,6 +1,9 @@
 import Modal from "../shared/Modal";
 
 function ProjectModal(props: any) {
+  const fromColor = `from-${props.color}-500`;
+  const toColor = `to-${props.color}-800`;
+
   return (
     <Modal
       title={props.projectName}
@@ -10,7 +13,9 @@ function ProjectModal(props: any) {
       logo={props.logo}
       button={
         <div>
-          <div className="aspect-square w-60 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 opacity-75 transition ease-in-out hover:opacity-100" />
+          <div
+            className={`aspect-square w-60 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 opacity-75 transition ease-in-out hover:opacity-100`}
+          />
           <h3 id="buttonTitle" className="mt-2 text-xl font-bold">
             {props.projectName}
           </h3>

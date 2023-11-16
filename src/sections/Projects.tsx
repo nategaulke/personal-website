@@ -19,7 +19,7 @@ function Projects() {
               projectName={project.projectName}
               position={project.position}
               timePeriod={project.timePeriod}
-              description={project.linkedSites}
+              description={project.description}
               linkedSites={project.linkedSites}
               logo={project.logo}
               color={project.color}

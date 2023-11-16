@@ -17,7 +17,7 @@
         "color" : "violet"
     },
     {
-        "projectName" : "Multithreaded Matrix Multiplication",
+        "projectName" : "Multi-Multiplication",
         "position" : "Lead Frontend Developer",
         "timePeriod" : "Aug. 2022 - May 2023",
         "description" : "Description Goes Here",
@@ -32,7 +32,7 @@
         "description" : "Description Goes Here",
         "linkedSites" : ["https://github.com/nategaulke/MealShareApp-FE"],
         "logo" : "/moviementor.webp",
-        "color" : "blue"
+        "color" : "red"
     },
     {
         "projectName" : "Knight Assistant",

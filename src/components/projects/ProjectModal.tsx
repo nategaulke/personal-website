@@ -1,8 +1,13 @@
 import Modal from "../shared/Modal";
 
 function ProjectModal(props: any) {
-  const fromColor = `from-${props.color}-500`;
-  const toColor = `to-${props.color}-800`;
+  const colorVariants: any = {
+    blue: "from-cyan-500 to-blue-500",
+    violet: "from-indigo-500 to-purple-500",
+    green: "from-lime-500 to-emerald-500",
+    yellow: "from-orange-500 to-yellow-500",
+    red: "from-pink-500 to-red-500",
+  };
 
   return (
     <Modal
@@ -14,7 +19,9 @@ function ProjectModal(props: any) {
       button={
         <div>
           <div
-            className={`aspect-square w-60 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 opacity-75 transition ease-in-out hover:opacity-100`}
+            className={`aspect-square w-60 rounded-lg bg-gradient-to-r ${
+              colorVariants[props.color]
+            } opacity-75 transition ease-in-out hover:opacity-100`}
           />
           <h3 id="buttonTitle" className="mt-2 text-xl font-bold">
             {props.projectName}

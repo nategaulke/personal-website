@@ -11,7 +11,7 @@
         "projectName" : "MovieMentor",
         "position" : "Lead Frontend Developer",
         "timePeriod" : "Aug. 2022 - May 2023",
-        "description" : "Description Goes Here",
+        "description" : "I completed two Senior Design courses at the University of Central Florida to complete my bachelor's degree. I presented an original idea to 5 of my peers that would become Movie Mentor. The idea was to create a website database where users could look up a movie and look for content warnings such as gore or something traumatic .",
         "linkedSites" : ["https://github.com/ContentWarnings/WebFrontend", "https://moviementor.app/"],
         "logo" : "/moviementor.webp",
         "color" : "violet"

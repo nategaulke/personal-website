@@ -30,35 +30,35 @@ function Header() {
       <div className="flex w-full flex-wrap justify-between text-white">
         <button
           type="button"
-          className="rounded border border border-transparent p-1 hover:border-white"
+          className="border border-transparent p-1 hover:border-white"
           onClick={() => handleClick("home")}
         >
           HOME
         </button>
         <button
           type="button"
-          className="rounded border border border-transparent p-1 hover:border-white"
+          className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("about")}
         >
           ABOUT
         </button>
         <button
           type="button"
-          className="rounded border border border-transparent p-1 hover:border-white"
+          className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("experience")}
         >
           EXPERIENCE
         </button>
         <button
           type="button"
-          className="rounded border border border-transparent p-1 hover:border-white"
+          className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("projects")}
         >
           PROJECTS
         </button>
         <button
           type="button"
-          className="rounded border border border-transparent p-1 hover:border-white"
+          className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("contact")}
         >
           CONTACT

@@ -2,8 +2,8 @@
     {
         "projectName" : "Portfolio Website",
         "position" : "Developer",
-        "timePeriod" : "Aug. 2022 - May 2023",
-        "description" : "Description Goes Here",
+        "timePeriod" : "Apr. 2022 - Present",
+        "description" : "I wanted to work on a resume website for a while, however other projects and school work often got in the way. Finally, after graduation I was able to finally to start working on this website. Design tools are not my strongest suite, so I guided a friend on how I wanted the website to look and he was able to create a mock of it using Figma. Using this design, I began developing a website with 5 sections. After creating my Experience Modal/Popup, I then made the component as generic as possible to allow code reuse for the Projects Modal. This minimized the amount of copied code and made editing and debugging come down to 1 component. Using JSON, I have eliminated most hardcoded values in the code.",
         "linkedSites" : ["https://github.com/nategaulke/personal-website"],
         "color" : "blue"
     },
@@ -18,29 +18,29 @@
     },
     {
         "projectName" : "Multi-Multiplication",
-        "position" : "Lead Frontend Developer",
-        "timePeriod" : "Aug. 2022 - May 2023",
+        "position" : "Backend Developer",
+        "timePeriod" : "Mar. 2023 - Apr. 2023",
         "description" : "Description Goes Here",
         "linkedSites" : ["https://github.com/ElijahMSmith/COP4520_Project"],
-        "logo" : "/moviementor.webp",
+        "logo" : "",
         "color" : "green"
     },
     {
         "projectName" : "Meet4Meal",
-        "position" : "Lead Frontend Developer",
-        "timePeriod" : "Aug. 2022 - May 2023",
-        "description" : "Description Goes Here",
-        "linkedSites" : ["https://github.com/nategaulke/MealShareApp-FE"],
-        "logo" : "/moviementor.webp",
+        "position" : "Mobile Developer",
+        "timePeriod" : "Sep. 2022",
+        "description" : "After attending virtual hackathons, I was finally able to go to my first in-person hackathon, ShellHacks, at the University of Miami. Over the 36 hours of the competition, I constructed a React Native mobile app with a team of 3 other engineers that allowed users to either offer to serve food or ask to share a meal with someone and then matched users together. I was in charge of designing the overall layout for 3 screens of the applicatio: the Profile page, Add New Request Page and the Matches Page. I then connnected these pages with 3 different API endpoints. While my team did not win the competition, I was grateful for the experience and the challenge of coding a project in a short amount of time.",
+        "linkedSites" : ["https://github.com/nategaulke/MealShareApp-FE", "https://devpost.com/software/meet4meal"],
+        "logo" : "/m4m.webp",
         "color" : "red"
     },
     {
         "projectName" : "Knight Assistant",
-        "position" : "Lead Frontend Developer",
-        "timePeriod" : "Aug. 2022 - May 2023",
-        "description" : "Description Goes Here",
+        "position" : "Backend Development Lead",
+        "timePeriod" : "Feb. 2021 - Apr. 2021",
+        "description" : "I signed up to be part of a projects program in the student organization Knight Hacks. During the semester, I collaborated virtually with 3 teammates to create a Discord bot in Python that could act as a personal assistant in club's Discord servers. Each week, I oversaw team meetings, checked in individually with team members, and assigned new features to be added over the 11 weeks we spent on the project. For the bot, I implemented a calendar feature with 3 seperate commands. This was achieved by connecting the bot to a MongoDB Database. I also added a school break command that found the next day off using a JSON request. At the end of the semester, we presented our project to a panel of judges from the club. We were awarded first place among a pool of 10 teams that initally began working in the program.",
         "linkedSites" : ["https://github.com/nategaulke/Knight-Assistant"],
-        "logo" : "/moviementor.webp",
+        "logo" : "",
         "color" : "yellow"
     }
 ]

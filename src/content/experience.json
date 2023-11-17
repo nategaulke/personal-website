@@ -1,6 +1,6 @@
 [
     {
-        "companyName": "Schwab",
+        "companyName": "Charles Schwab",
         "jobTitle": "Associate Software Engineer",
         "timePeriod": "Jun. 2023 - Present",
         "description": "I returned to Charles Schwab after my internship. Since then, I have led the effort of updating their servers for four different applications. I have also created new API endpoints for two different applications in the company's Retirement Business Services. As part of their new employeee program, I have earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master. I work remote in the Orlando area.",
@@ -8,7 +8,7 @@
         "devTools": ["Java", "Spring", "Google Cloud", "Scrum"]
     },
     {
-        "companyName": "Schwab",
+        "companyName": "Charles Schwab",
         "jobTitle": "Software Engineer Intern",
         "timePeriod": "Jun. 2022 - Aug. 2022",
         "description": "I accepted an internship with Charles Schwab in October 2021, having already been a client of the business already. As an intern, I worked with Java and Spring to create two new endpoints for fetching prices of assets. I automated testing of a webpage using Cucumber for Java and Gherkin, cutting time from QA review. Throughout my time, I explored the Scrum process, SQL, Continuous Integration/Development, and Splunk. I worked in their corporate Phoenix office",

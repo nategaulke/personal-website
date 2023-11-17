@@ -125,7 +125,7 @@ function Modal(props: any) {
                         as="h3"
                         className="text-center text-xl font-bold text-black sm:text-left md:text-2xl"
                       >
-                        {props.position}
+                        {props.title} - {props.position}
                       </Dialog.Title>
                       <h4 className="text-center font-bold text-black sm:text-left">
                         {props.timePeriod}

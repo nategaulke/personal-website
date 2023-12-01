@@ -30,7 +30,7 @@ function Header() {
       <div className="flex w-full flex-wrap justify-between text-white">
         <button
           type="button"
-          className="border border-transparent p-1 hover:border-white"
+          className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("home")}
         >
           HOME

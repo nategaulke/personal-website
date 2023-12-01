@@ -2,7 +2,7 @@ import TechPill from "./TechPill";
 
 function ExperienceButton(props: any) {
   return (
-    <div className="z-10 w-max overflow-hidden text-ellipsis rounded-lg border border-2 bg-white p-4 shadow duration-200 hover:shadow-none sm:flex sm:w-[80vw] lg:w-[40vw]">
+    <div className="z-10 w-[80vw] overflow-hidden text-ellipsis rounded-lg border border-2 bg-white p-4 shadow duration-200 hover:shadow-none sm:flex lg:w-[40vw]">
       <div>
         <div className="flex justify-center sm:w-max">
           <img

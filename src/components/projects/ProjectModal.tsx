@@ -19,13 +19,17 @@ function ProjectModal(props: any) {
       button={
         <div>
           <div
-            className={`aspect-square w-60 rounded-lg bg-gradient-to-r ${
+            className={`flex aspect-square w-60 rounded-lg bg-gradient-to-r ${
               colorVariants[props.color]
             } opacity-75 transition ease-in-out hover:opacity-100`}
-          />
-          <h3 id="buttonTitle" className="mt-2 text-xl font-bold">
-            {props.projectName}
-          </h3>
+          >
+            <h3
+              id="buttonTitle"
+              className="mt-2 grid h-full w-full place-items-center text-xl font-bold text-white"
+            >
+              {props.projectName}
+            </h3>
+          </div>
         </div>
       }
       linkedSites={props.linkedSites}

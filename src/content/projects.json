@@ -11,7 +11,7 @@
         "projectName" : "MovieMentor",
         "position" : "Lead Frontend Developer",
         "timePeriod" : "Aug. 2022 - May 2023",
-        "description" : "I completed two Senior Design courses at the University of Central Florida to complete my bachelor's degree. I presented an original idea to 5 of my peers that would become Movie Mentor. The idea was to create a website database where users could look up a movie and look for content warnings such as gore or something traumatic .",
+        "description" : "I completed two Senior Design courses at the University of Central Florida to complete my bachelor's degree. I presented an original idea to 5 of my peers that would become Movie Mentor. The idea was to create a website database where users could look up a movie and look for content warnings such as gore or something traumatic. I researched web frontend tools. I then wrote 30 pages explaining the options and arguing which tools we should use. We decided on creating a React App with Tailwind CSS. I was the lead of the website creation, managing 2 other team members. I created four different web pages and oversaw the making of the other pages. We then presented our project to three professors and were awarded an A grade for our project.",
         "linkedSites" : ["https://github.com/ContentWarnings/WebFrontend", "https://moviementor.app/"],
         "logo" : "/moviementor.webp",
         "color" : "violet"
@@ -20,7 +20,7 @@
         "projectName" : "Multi-Multiplication",
         "position" : "Backend Developer",
         "timePeriod" : "Mar. 2023 - Apr. 2023",
-        "description" : "Description Goes Here",
+        "description" : "In my last semester, I was part of a Parallel & Distributed Systems class. The last assignment was a team project with four other classmates. We created a multithreaded program in Java that could multiply multiple matrices together. I organized the code that multiplied the rows and columns together most efficiently. Another group worked on finding the optimal order to multiply the matrices. The optimized multiplication allowed us to multiply two 2000 x 2000 matrices using 10 threads in 10 seconds when the brute force solution took 15 seconds. For 1000 matrices of varying sizes, our optimized 10 thread solution finished in half a second compared to the 5 seconds of the brute force solution. Linked in the Github is our report with the research and results.",
         "linkedSites" : ["https://github.com/ElijahMSmith/COP4520_Project"],
         "logo" : "",
         "color" : "green"

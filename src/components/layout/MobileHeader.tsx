@@ -23,12 +23,12 @@ function MobileHeader() {
       <div className="flex">
         {!isOpen && (
           <button type="button" aria-label="Menu" onClick={openModal}>
-            <FaBars className="fixed left-0 right-0 z-10 m-4 flex bg-opacity-60 text-4xl text-accent-blue mix-blend-luminosity" />
+            <FaBars className="fixed left-0 right-0 z-30 m-4 flex bg-opacity-60 text-4xl text-accent-blue mix-blend-luminosity" />
           </button>
         )}
       </div>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-20" onClose={closeModal}>
+        <Dialog as="div" className="relative z-40" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"

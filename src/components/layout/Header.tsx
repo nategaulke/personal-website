@@ -23,9 +23,9 @@ function Header() {
 
   return (
     <nav
-      className={`active ${
-        noShow && "hidden"
-      } fixed left-0 right-0 z-20 flex bg-accent-blue bg-opacity-60 px-16 py-2`}
+      className={`${
+        noShow && "opacity-0"
+      } fixed left-0 right-0 z-20 flex bg-accent-blue bg-opacity-60 px-16 py-2 transition transition-opacity duration-500`}
     >
       <div className="flex w-full flex-wrap justify-between text-white">
         <button

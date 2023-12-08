@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { isMobile } from "react-device-detect";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import { FaTimes } from "react-icons/fa";
 
 function Modal(props: any) {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,13 +91,15 @@ function Modal(props: any) {
                 >
                   <div className="sm:flex">
                     {isMobile && (
-                      <button
-                        type="button"
-                        className="text-md mb-4 rounded-md border border-transparent bg-transparent px-2 py-1 font-medium text-black hover:border-white"
-                        onClick={closeModal}
-                      >
-                        &larr; Back
-                      </button>
+                      <div className="w-full text-right">
+                        <button
+                          type="button"
+                          className="mb-4 rounded-md border border-transparent bg-transparent px-2 py-1 text-black hover:border-white"
+                          onClick={closeModal}
+                        >
+                          <FaTimes className="text-3xl" />
+                        </button>
+                      </div>
                     )}
                     {props.logo ? (
                       <div className="flex h-full w-auto flex-col items-center sm:w-1/3">
@@ -123,9 +126,20 @@ function Modal(props: any) {
                     >
                       <Dialog.Title
                         as="h3"
-                        className="text-center text-xl font-bold text-black sm:text-left md:text-2xl"
+                        className="flex justify-between text-center text-xl font-bold text-black sm:text-left md:text-2xl"
                       >
-                        {props.title} - {props.position}
+                        <div>
+                          {props.title} - {props.position}
+                        </div>
+                        {!isMobile && (
+                          <button
+                            type="button"
+                            className="rounded-md border border-transparent bg-transparent px-2 py-1 text-black hover:opacity-50"
+                            onClick={closeModal}
+                          >
+                            <FaTimes className="text-3xl" />
+                          </button>
+                        )}
                       </Dialog.Title>
                       <h4 className="text-center font-bold text-black sm:text-left">
                         {props.timePeriod}
@@ -135,14 +149,7 @@ function Modal(props: any) {
                           {props.description}
                         </p>
                       </div>
-                      <div className="mt-4 flex w-full justify-between">
-                        <button
-                          type="button"
-                          className="rounded-md border border-transparent bg-transparent px-2 py-1 text-sm font-medium text-black hover:border-black "
-                          onClick={closeModal}
-                        >
-                          &larr; Back
-                        </button>
+                      <div className="mt-4 flex w-full justify-end">
                         {getLinkSymbols()}
                       </div>
                     </div>

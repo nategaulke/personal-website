@@ -48,8 +48,8 @@ function Intro() {
         <button
           type="button"
           className={`rounded-full ${
-            show ? `` : `hidden`
-          } bg-transparent p-2 opacity-75 hover:bg-white hover:bg-opacity-50 hover:opacity-100`}
+            show ? `opacity-100` : `opacity-0`
+          } bg-transparent p-2 transition transition-opacity duration-500 hover:bg-white hover:bg-opacity-50`}
           onClick={() => handleClick("about")}
           aria-label="Continue Page Down"
         >

@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is the code website of my personal website. My website includes a short introduction as well as some experiences and projects I wish to highlight. While the code portion is completed for this project, I will hopefully add more experiences and projects! :)
+This is the code of my personal website. My website includes a short introduction as well as some experiences and projects I wish to highlight. While the code portion is completed for this project, I will hopefully add more experiences and projects! :)
 
 ## Installation
 

@@ -13,7 +13,7 @@ function About() {
           the University of Central Florida in May 2023.
           <br />
           <br />
-          Today, I continue to explore the software engineering both in and out
+          Today, I continue to explore software engineering both in and out
           of my job. Outside of technology, I am passionate about the outdoors,
           traveling, and animation.
         </p>

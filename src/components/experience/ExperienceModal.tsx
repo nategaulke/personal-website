@@ -4,7 +4,7 @@ import TechPill from "./TechPill";
 
 function ExperienceModal(props: any) {
   const devIcons = props.devTools.map((devTool: any, index: any) => (
-    <TechPill name={devTool} index={index} />
+    <TechPill name={devTool} key={index} />
   ));
 
   return (

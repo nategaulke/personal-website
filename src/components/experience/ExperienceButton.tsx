@@ -26,7 +26,7 @@ function ExperienceButton(props: any) {
           <div className="mt-2">
             <div className="flex flex-wrap justify-center sm:justify-normal">
               {props.devTools.map((devTool: any, index: any) => (
-                <TechPill name={devTool} index={index} />
+                <TechPill name={devTool} key={index} />
               ))}
             </div>
           </div>

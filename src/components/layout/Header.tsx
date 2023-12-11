@@ -30,6 +30,7 @@ function Header() {
       <div className="flex w-full flex-wrap justify-between text-white">
         <button
           type="button"
+          role="link"
           className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("home")}
         >
@@ -37,6 +38,7 @@ function Header() {
         </button>
         <button
           type="button"
+          role="link"
           className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("about")}
         >
@@ -44,6 +46,7 @@ function Header() {
         </button>
         <button
           type="button"
+          role="link"
           className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("experience")}
         >
@@ -51,6 +54,7 @@ function Header() {
         </button>
         <button
           type="button"
+          role="link"
           className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("projects")}
         >
@@ -58,6 +62,7 @@ function Header() {
         </button>
         <button
           type="button"
+          role="link"
           className="border-b border-transparent p-1 hover:border-white"
           onClick={() => handleClick("contact")}
         >

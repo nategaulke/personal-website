@@ -3,7 +3,7 @@
         "companyName": "Charles Schwab",
         "jobTitle": "Software Engineer II",
         "timePeriod": "Jun. 2025 - Present",
-        "description": "Since being promoted, I continue supporting the team primarily by ensuring that applications use up-to-date technolody and security. I continually monitor security scans for new flaws. I maintain documentation for team onboarding and for differnt team tools. I continue to modernize by creating new endpoints and improving existing ones. As we begin adopting GitHub Copilot, I look forward to using it not as a crutch but a tool to increase my velocity.",
+        "description": "Since being promoted, I continue supporting the team primarily by ensuring that applications use up-to-date technology and security. I continually monitor Veracode security scans for new flaws. I maintain documentation for team onboarding and different team tools. I modernize our applications by creating new endpoints and improving existing ones. As the company begins adopting GitHub Copilot, I look forward to using it not as a crutch but a tool to increase my velocity.",
         "logo": "/schwab_logo.webp",
         "devTools": ["Java", "Spring"]
     },

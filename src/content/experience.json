@@ -1,9 +1,17 @@
 [
     {
         "companyName": "Charles Schwab",
+        "jobTitle": "Software Engineer II",
+        "timePeriod": "Jun. 2025 - Present",
+        "description": "Since being promoted, I continue supporting the team primarily by ensuring that applications use up-to-date technolody and security. I continually monitor security scans for new flaws. I maintain documentation for team onboarding and for differnt team tools. I continue to modernize by creating new endpoints and improving existing ones. As we begin adopting GitHub Copilot, I look forward to using it not as a crutch but a tool to increase my velocity.",
+        "logo": "/schwab_logo.webp",
+        "devTools": ["Java", "Spring"]
+    },
+    {
+        "companyName": "Charles Schwab",
         "jobTitle": "Associate Software Engineer",
-        "timePeriod": "Jun. 2023 - Present",
-        "description": "I returned to Charles Schwab after my internship. Since then, I led the effort to update servers for five different applications. I setup over 50 servers for an updated operating system. I also created new API endpoints for two different applications in the company's Retirement Business Services. As part of their new employeee program, I earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master. Currently, I work remote in the Orlando area.",
+        "timePeriod": "Jun. 2023 - Jun. 2025",
+        "description": "I returned to Charles Schwab after my internship. As part of their new employeee program, I earned certifications for Google Cloud Certified Associate Cloud Engineer and Professional Scrum Master. Having graduated from the program, I facilitated sessions to help other out-of-college employees. In my team, I designed several endpoints for 4 different apps as part of multi-year push towards modernization on our team. One of my first tasks was to build over 50 application servers across 5 applications as part of organization RHEL upgrade. My next project was coordinating the company initiative within my team to move from Bitbucket to GitHub by migrating 8 applications and maintaining onboarding page viewed by over 350 developers.",
         "logo": "/schwab_logo.webp",
         "devTools": ["Java", "Spring", "Google Cloud", "Scrum"]
     },
